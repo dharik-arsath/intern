@@ -21,8 +21,6 @@ def get_data_model():
 	else:
 		return None, None
 
-
-@st.cache
 def preprocess(data):
 	 data.columns = data.columns.str.replace('-','_')
 
